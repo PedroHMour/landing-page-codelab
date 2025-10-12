@@ -7,8 +7,7 @@
 
 Este é um projeto de landing page comercial criado para o portfólio, demonstrando habilidades em desenvolvimento front-end moderno sem o uso de frameworks. O site foi desenvolvido para a "DevMasters Academy", uma empresa fictícia de cursos de programação.
 
-![Prévia do Projeto](https://via.placeholder.com/800x400.png?text=Adicione+um+print+do+seu+site+aqui!)
-*(Substitua a imagem acima por uma captura de tela do seu projeto finalizado)*
+![Prévia do Projeto](/public/banner.png)
 
 ---
 
@@ -45,7 +44,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd devmasters-landing-page
+    cd CodeLab-landing-page
     ```
 
 3.  **Instale as dependências:**
@@ -61,7 +60,3 @@ Para rodar este projeto localmente, siga os passos abaixo:
 5.  Abra seu navegador e acesse `http://localhost:5173` (ou o endereço que aparecer no terminal).
 
 ---
-
-Este projeto é um excelente ponto de partida. Agora você pode expandi-lo adicionando mais seções, animações, um menu mobile funcional e até mesmo um modo escuro!
-
-Se tiver qualquer dúvida ou quiser adicionar alguma funcionalidade, é só me dizer qual é o próximo passo!
