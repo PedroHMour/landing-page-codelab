@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeLab Academy - Transforme seu futuro com código</title>
 </head>
+
 <body>
   <header class="header">
     <nav class="container">
       <a href="#" class="header__logo">CodeLab</a>
-
       <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
       </button>
-
       <ul class="header__menu" id="main-menu">
         <li><a href="#cursos">Cursos</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#" class="button button--primary">Inscreva-se</a></li>
+        <li><a href="#inscricao" class="button button--primary">Inscreva-se</a></li>
       </ul>
     </nav>
   </header>
@@ -34,21 +39,100 @@
 
     <section id="cursos" class="courses">
       <div class="container">
-        <h2 class="section-title">Nossos Cursos</h2>
+        <h2 class="section-title">Explore Nossos Cursos</h2>
         <div class="courses__grid">
+
           <div class="course-card">
+            <div class="course-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+              </svg>
+            </div>
             <h3 class="course-card__title">Desenvolvimento Web Completo</h3>
             <p class="course-card__description">Do HTML ao React, domine as tecnologias mais modernas do mercado.</p>
+            <div class="course-card__tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>React</span>
+            </div>
+            <a href="#" class="button button--primary">Saiba Mais</a>
           </div>
+
           <div class="course-card">
+            <div class="course-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375" />
+              </svg>
+            </div>
             <h3 class="course-card__title">Python para Ciência de Dados</h3>
             <p class="course-card__description">Analise dados e crie modelos de machine learning com Python.</p>
+            <div class="course-card__tags">
+              <span>Python</span>
+              <span>Pandas</span>
+            </div>
+            <a href="#" class="button button--primary">Saiba Mais</a>
           </div>
+
           <div class="course-card">
+            <div class="course-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+            </div>
             <h3 class="course-card__title">UX/UI Design para Apps</h3>
             <p class="course-card__description">Crie interfaces incríveis e focadas na experiência do usuário.</p>
+            <div class="course-card__tags">
+              <span>Figma</span>
+              <span>UX</span>
+              <span>UI</span>
+            </div>
+            <a href="#" class="button button--primary">Saiba Mais</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1974&auto=format&fit=crop"
+              alt="Pessoas colaborando em um escritório moderno">
+          </div>
+          <div class="about__text">
+            <h2 class="section-title">Sobre a CodeLab</h2>
+            <p>
+              Acreditamos que a educação em tecnologia deve ser acessível, prática e focada no que o mercado realmente
+              precisa. A CodeLab nasceu do desejo de encurtar o caminho entre você e sua carreira dos sonhos como
+              desenvolvedor(a).
+            </p>
+            <p>
+              Nossos cursos são criados por profissionais experientes que atuam nas melhores empresas do setor,
+              garantindo um conteúdo atualizado e relevante para os desafios de hoje.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="inscricao" class="signup">
+      <div class="container">
+        <h2 class="section-title">Comece a Aprender Hoje Mesmo</h2>
+        <p class="signup__subtitle">
+          Inscreva-se para receber novidades sobre os próximos cursos e ofertas especiais.
+        </p>
+        <form class="signup__form" id="signup-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+          </div>
+          <button type="submit" class="button button--secondary">Quero me Inscrever!</button>
+        </form>
       </div>
     </section>
   </main>
@@ -59,6 +143,7 @@
     </div>
   </footer>
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="src/main.ts"></script>
 </body>
+
 </html>

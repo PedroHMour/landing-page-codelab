@@ -40,7 +40,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/devmasters-landing-page.git](https://github.com/seu-usuario/devmasters-landing-page.git)
+    git clone [https://github.com/PedroHMour/landing-page-codelab](https://github.com/PedroHMour/landing-page-codelab)
     ```
 
 2.  **Navegue até a pasta do projeto:**

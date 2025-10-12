@@ -1,27 +1,16 @@
 import './styles/main.scss'
 
-// --- LÓGICA DO MENU MOBILE ---
-
-// 1. Seleciona os elementos do HTML que vamos manipular.
-// Usamos "as HTMLElement" para dizer ao TypeScript que temos certeza
-// de que estes elementos são do tipo HTMLElement.
 const menuToggle = document.getElementById('menu-toggle') as HTMLButtonElement;
 const mainMenu = document.getElementById('main-menu') as HTMLElement;
 
-// 2. Verifica se os elementos realmente existem na página antes de continuar.
-// Isso previne erros caso o HTML seja alterado.
+
 if (menuToggle && mainMenu) {
 
-  // 3. Adiciona um "ouvinte de evento" de clique no botão.
-  // Isso significa: "Quando o botão for clicado, execute a função a seguir".
+
   menuToggle.addEventListener('click', () => {
 
-    // 4. A função a ser executada:
-    // O método .toggle() adiciona a classe se ela não existir,
-    // e a remove se ela já existir. É como um interruptor de luz.
     mainMenu.classList.toggle('is-active');
 
-    // Bônus: Mudar o ícone para um "X" quando o menu está aberto
     const isMenuOpen = mainMenu.classList.contains('is-active');
     if (isMenuOpen) {
       menuToggle.innerHTML = `
@@ -34,6 +23,15 @@ if (menuToggle && mainMenu) {
       `;
       menuToggle.setAttribute('aria-label', 'Abrir menu');
     }
+  });
+}
+const signupForm = document.getElementById('signup-form');
+
+if (signupForm) {
+  signupForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    alert('Inscrição recebida! Obrigado pelo seu interesse. (Esta é uma demonstração)');
+    (signupForm as HTMLFormElement).reset();
   });
 }
 
