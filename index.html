@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLab Academy - Transforme seu futuro com código</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="container">
+      <a href="#" class="header__logo">CodeLab</a>
+
+      <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <ul class="header__menu" id="main-menu">
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#" class="button button--primary">Inscreva-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title">Aprenda a Programar com os Melhores</h1>
+        <p class="hero__subtitle">Cursos práticos e direto ao ponto para você se tornar um desenvolvedor de sucesso.</p>
+        <a href="#cursos" class="button button--secondary">Ver Cursos</a>
+      </div>
+    </section>
+
+    <section id="cursos" class="courses">
+      <div class="container">
+        <h2 class="section-title">Nossos Cursos</h2>
+        <div class="courses__grid">
+          <div class="course-card">
+            <h3 class="course-card__title">Desenvolvimento Web Completo</h3>
+            <p class="course-card__description">Do HTML ao React, domine as tecnologias mais modernas do mercado.</p>
+          </div>
+          <div class="course-card">
+            <h3 class="course-card__title">Python para Ciência de Dados</h3>
+            <p class="course-card__description">Analise dados e crie modelos de machine learning com Python.</p>
+          </div>
+          <div class="course-card">
+            <h3 class="course-card__title">UX/UI Design para Apps</h3>
+            <p class="course-card__description">Crie interfaces incríveis e focadas na experiência do usuário.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CodeLab Academy. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
