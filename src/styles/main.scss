@@ -256,7 +256,7 @@ h1, h2, h3, .section-title {
   }
 }
 
-// --- Sobre ---
+// --- Sobre (FIXED: Imagem Proporcional) ---
 .about {
   padding: 100px 0;
   background-color: var.$dark-color;
@@ -264,32 +264,50 @@ h1, h2, h3, .section-title {
   &__content {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 80px; 
   }
 
   &__image {
-    flex: 1;
+    flex: 0 0 45%; 
+    position: relative;
+
     img {
+      width: 100%;
+      // Define uma proporção fixa (cinemática)
+      aspect-ratio: 16 / 9; 
+      // Garante que a imagem preencha o espaço sem distorcer
+      object-fit: cover; 
+      
       border-radius: var.$radius;
-      border: 2px solid rgba(255, 255, 255, 0.1);
-      // Efeito PB -> Colorido no hover
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+      
+      // Efeito PB -> Colorido
       filter: grayscale(100%);
-      transition: filter 0.5s ease;
+      transition: all 0.5s ease;
       
       &:hover {
         filter: grayscale(0%);
+        transform: scale(1.02);
+        box-shadow: 0 20px 40px -10px rgba(124, 58, 237, 0.3);
       }
     }
   }
 
   &__text {
-    flex: 1;
+    flex: 1; 
+    
     p {
       color: var.$text-muted;
       margin-bottom: 20px;
       font-size: 1.1rem;
+      line-height: 1.8; 
     }
-    .section-title { text-align: left; &::after { margin-left: 0; } }
+    .section-title { 
+      text-align: left; 
+      margin-bottom: 30px;
+      &::after { margin-left: 0; } 
+    }
   }
 }
 
@@ -362,7 +380,21 @@ h1, h2, h3, .section-title {
 @media (max-width: var.$breakpoint-md) {
   .hero__title { font-size: 2.8rem; }
   
-  .about__content { flex-direction: column; }
+  // Ajustes no Responsivo da Seção About
+  .about__content { 
+    flex-direction: column; 
+    gap: 40px;
+  }
+  
+  .about__image {
+    flex: 0 0 100%;
+    width: 100%;
+    
+    img {
+      aspect-ratio: 4 / 3; // Mais quadrado no mobile
+    }
+  }
+
   .about__text .section-title { text-align: center; &::after { margin: 15px auto 0; } }
 
   .header {
