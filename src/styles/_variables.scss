@@ -1,14 +1,32 @@
-// Paleta de Cores
-$primary-color: #6a11cb;
-$secondary-color: #2575fc;
-$dark-color: #1a1a1a;
-$light-color: #f4f4f4;
-$text-color: #333;
+// --- Paleta Dark Tech / Cyberpunk ---
+
+// Fundo principal (quase preto, levemente azulado para não cansar a vista)
+$dark-color: #0B1120; 
+$card-bg: #1E293B;
+
+// Cores de Ação (Vibrantes)
+$primary-color: #7C3AED; // Roxo Elétrico
+$secondary-color: #06B6D4; // Ciano Neon
+$accent-color: #F43F5E; // Rosa para detalhes
+
+// Textos
+$text-color: #E2E8F0; // Branco gelo (leitura)
+$text-muted: #94A3B8; // Cinza azulado
+
+// Gradientes
+$gradient-hero: linear-gradient(135deg, $dark-color 0%, #1a1a2e 100%);
+$gradient-button: linear-gradient(90deg, $primary-color, $secondary-color);
+$gradient-text: linear-gradient(90deg, #A78BFA, #22D3EE); // Texto degradê
 
 // Fontes
-$font-family: 'Helvetica', 'Arial', sans-serif;
-$font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$font-family: 'Inter', 'Roboto', sans-serif; // Inter é mais moderna se puder usar, senão Roboto
 
-// Breakpoints para responsividade
+// Breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+// Efeitos
+$shadow-neon: 0 0 15px rgba(124, 58, 237, 0.5);
+$shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+$radius: 12px;
